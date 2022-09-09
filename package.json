@@ -1,0 +1,38 @@
+{
+  "name": "nodejs-authentication",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hieuvnautotech/nodejs-authentication.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hieuvnautotech/nodejs-authentication/issues"
+  },
+  "homepage": "https://github.com/hieuvnautotech/nodejs-authentication#readme",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parse": "^0.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "ejs": "^3.1.8",
+    "email-validator": "^2.0.4",
+    "express": "^4.18.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-handlebars": "^6.0.6",
+    "mongoose": "^6.6.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19"
+  }
+}
