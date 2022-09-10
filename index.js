@@ -7,6 +7,7 @@ const app = express();
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const authRoute = require('./routes/auth'); // import routes
+const postRoute = require('./routes/posts');
 // const morgan = require("morgan"); // để log
 // const connectDB = require("./server/database/connection");
 dotenv.config();
@@ -25,7 +26,7 @@ mongoose.connect(
     {useNewUrlParser: true},
     () => console.log('connected to db!')
 );
-// const homeRoutes = require("./routes/home-routes");
+
 
 
 // app.use(expressLayouts);
@@ -40,6 +41,8 @@ app.use(express.json());//middleware
 // app.use(homeRoutes.routes);
 // app.use(authRoutes.routes);
 app.use('/api/user', authRoute); //middle ware for route
+app.use('/api/posts', postRoute);
+
 
 app.listen(3000, () =>
   console.log("App is listening on url http://localhost:3000")
